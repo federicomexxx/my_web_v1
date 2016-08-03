@@ -2,14 +2,14 @@
 <html>
 	<head> 
 	    <meta charset="utf8" />  
-	    <title>Sitio test Bootstrap</title>
+	    <title>Fm UI/UX Designer</title>
 	
 	    <!--PARA VISUALIZACION EN DISPOSITIVOS MOVILES---------------->  
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 	    <!--VINCULO AFUENTES GOOGLE FONTS---------------->
-	    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
 	    <!--VINCULO A ESTILOS BOOTSTRAP---------------->  
 	    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>--> 
@@ -29,102 +29,143 @@
 	</head>
 	
 	<body>
-		<nav id="smart_navbar" class="navbar navbar-default navbar_static strong_grey">
+		<nav id="smart_navbar" class="navbar navbar-default">
 			<div class="collapse navbar-collapse text-center">
 				<a href="#" class="logo navbar-brand"></a>
-				<ul class="nav navbar-nav nav-center">
-					<li><a href="#" class="effect_link">Home</a></li>
-					<li><a href="#" class="effect_link">Works</a></li>
-					<li><a href="#" class="effect_link">About me</a></li>
-					<li><a href="#" class="effect_link">Contact</a></li>
-				</ul>
 				<ul class="nav navbar navbar-nav navbar-right">
-					<a href="#" class="icon_social"><img src="images/icon-linkedin.svg"></a>
+					<a id="btn_menu" href="#">
+						<div id="icon_menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</a>
 				</ul>
 			</div>
 		</nav>
+		<div class="overlay_nav"></div>
+			<nav id="main_menu">
+			<header class="header_menu bg_img">
+				<div class="overlay"></div>
+				<div class="portrait">
+					<img src="images/portrait.jpg">
+				</div>
+				<h1 class="title_name">I'm <span class="strong">Federico Mosqueira</span></h1>
+				<h2 class="subtitle_name">ui/ux designer</h2>
+			</header>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Works</a></li>
+				<li class="fix_element">
+					<a href="#" class="btn_info medium_shadow">Contact info</a>
+					<div class="contact_info">
+						<p>Email: fede1985.mosqueira@gmail.com</p>
+						<p>Phone: (+598) 096 315665</p>
+						<p>Adress: Montevideo / Uruguay</p>
+						<a href="#" class="btn_download">Download resume</a>
+					</div>
+				</li>
+			</ul>
+			<div class="info_about">
+				<h3>About me</h3>
+				<p>Greetings! My name is Jonathan Atkinson, I’m a web designer and developer from Ohio, U.S.A. I create wonderful experiences in WordPress for thousands of people.</p>	
+			</div>
+			<!-- <span class="menu_copyright">COPYRIGHT © 2014 | ALL RIGHTS RESERVED</span> -->
+			</nav>
 		
-		<div class="container-fluid reset_side_space hardBlack">
-				
-				<div class="col-md-8 reset_side_space">
-					<img src="images/works/img-content-01.jpg" class="img-responsive" alt="">
-					<div class="col-md-6 reset_side_space">			
-						<img src="images/works/img-content-02.jpg" class="img-responsive" alt="">
-					</div>
-					<div class="col-md-6 reset_side_space">	
-						<img src="images/works/img-content-03.jpg" class="img-responsive" alt="">
-					</div>
+		<header id="header" class="container_header content bkg_work_01 pattern_bg">
+			<div class="overlay"></div>
+			<div class="presentation_content clearfix">
+				<div class="center-block">
+					<h1 class="text_light text-center animated fadeInUptBig">The Hawkers Co.</h1>
+					<h2 class="text_light text-center animated lead fadeInUpBig">Sunglasses e-commerce shop from New York</h2>
 				</div>
-	
+			</div>
+		</header>
+    
+		<div id="section_works_detail" class="container strong_grey">
+		<div class="row">
+			<div class="container row_space common_text">
+				<div class="col-md-8">
+				<p class="text_half_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="text_half_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="text_half_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="text_half_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 				<div class="col-md-4">
-					<div class="cont_info_project light_text">
-						<!-- <h1 class="content_title">Lorem ipsum dolor</h1> -->
-						<h4 class="content_subtitle text_light_red">Sit ammet et nedeo ectum sitamet</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis 
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunttempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt
-						at. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incidiat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					
-<!-- 					<div class="info_project table light_text">
-						<div class="table_row">
-							<div class="table_cell"><strong>Client:</strong></div>
-							<div class="table_cell"><span>Hawkers Co.</span></div>
-						</div>
-						<div class="table_row">
-							<div class="table_cell"><strong>Year:</strong></div>
-							<div class="table_cell"><span>2015</span></div>
-						</div>
-					</div> -->
-					</div>
+				<p class="text_half_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magnaur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			
+			</div>
+		</div>
+		<!-- section works end ------------------------------------------------------------>
 		</div>
 
-		<footer class="footer_navigation container-fluid hardBlack controls_project light_text">
-			<div class="col-md-5 text-left">
-				<a href="#" class="navigation_work">< Prev work</a>
+		<div id="section_works_detail" class="container-fluid strong_grey reset_side_space">
+			<div class="row-fluid">
+				<div class="work_detail col-md-4 reset_side_space">
+					<div class="cont_data_info pull-left">
+						<p class="name_project"><span>Project:</span> Aluminios del Uruguay</p>
+						<p class="date_project"><span>Date:</span> Apr/2016</p>
+					</div>
+					<div class="overlay"></div>
+					<img src="images/img-02.jpg" class="img-responsive">
+				</div>
+				<div class="work_detail col-md-4 reset_side_space">
+					<div class="cont_data_info pull-left">
+						<p class="name_project"><span>Project:</span> Aluminios del Uruguay</p>
+						<p class="date_project"><span>Date:</span> Apr/2016</p>
+					</div>
+					<div class="overlay"></div>
+					<img src="images/img-01.jpg" class="img-responsive">
+				</div>
+				<div class="work_detail col-md-4 reset_side_space">
+					<div class="cont_data_info pull-left">
+						<p class="name_project"><span>Project:</span> Aluminios del Uruguay</p>
+						<p class="date_project"><span>Date:</span> Apr/2016</p>
+					</div>
+					<div class="overlay"></div>
+					<img src="images/img-03.jpg" class="img-responsive">
+				</div>
 			</div>
-			<div class="col-md-2 text-center">
-				<a href="#" class="navigation_work side_border"><strong>All Works</strong></a>
-			</div>
-			<div class="col-md-5 text-right">
-				<a href="#" class="navigation_work">Next work ></a>
-			</div>
-		</footer>
+		</div>
 
+		<div class="footer_navigation container-fluid controls_project light_text reset_side_space">
+			<div class="col-md-5 text-left reset_side_space">
+				<a href="#" class="navigation_work text_half_light">< Prev work</a>
+			</div>
+			<div class="col-md-2 text-center reset_side_space">
+				<a href="#" class="navigation_work side_border text_half_light">All Works</a>
+			</div>
+			<div class="col-md-5 text-right reset_side_space">
+				<a href="#" class="navigation_work text_half_light">Next work ></a>
+			</div>
+		</div>
+		
 		<footer class="footer">	
 			<p class="text-center copyright">Copyright © 2014 | All rights reserved</p>
 		</footer>
-		
-		</div>
-			
-
-
+	    
 	</body>
 </html>  

@@ -65,7 +65,8 @@ function showProjectInfo() {
 
     $('.cont_info_project').each(function(){
         var contentInfoHeight = $(this).outerHeight();
-        $(this).css('bottom', -contentInfoHeight);
+        //alert(adjustHide);
+        $(this).css('bottom', - contentInfoHeight);
         //console.log(contentInfoHeight);
     });
 
@@ -79,6 +80,14 @@ function showProjectInfo() {
                 $(this).css('bottom', -contentInfoHeight);
             });
 
+            $('.project_info').each(function(){
+                if ($(this).css('bottom') > '0px') {
+                    var infoHeight = $(this).outerHeight();
+                    $(this).css('bottom', -infoHeight);
+                    $(this).siblings('.btn_work').removeClass('btn_open');
+                    showProjectDescription();
+                }
+            });            
         }
     );
 }
@@ -100,7 +109,7 @@ function showProjectDescription() {
 
         if(auxCont == 1) {
             $(this).addClass('btn_open');
-            $(this).siblings('.project_info').css('bottom', '50px');
+            $(this).siblings('.project_info').css('bottom', '90px');
             auxCont = 0;
         } else {
             $(this).removeClass('btn_open');
